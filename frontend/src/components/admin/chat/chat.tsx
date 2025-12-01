@@ -91,12 +91,12 @@ const ChatAdmin = () => {
         { headers: { Authorization: `Bearer ${accessToken}` } }
       );
 
-      connection.current?.invoke(
-        "SendMessage",
-        selectedContact.id,
-        payload.message,
-        type
-      );
+      // connection.current?.invoke(
+      //   "SendMessage",
+      //   selectedContact.id,
+      //   payload.message,
+      //   type
+      // );
 
       if (!content) setInputMsg("");
     } catch (err) {

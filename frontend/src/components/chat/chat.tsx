@@ -42,7 +42,7 @@ const Chat = () => {
             conn.start().then(() => {
                 console.log("SignalR Connected Client");
                 const guestId = localStorage.getItem("guestId");
-                conn.invoke("JoinRoom", guestId);
+                if(guestId) conn.invoke("JoinRoom", guestId);
             });
 
             conn.on("ReceiveMessage", (msg) => {
@@ -86,7 +86,7 @@ const Chat = () => {
             });
 
 
-            await connection.current?.invoke("SendMessage", guestId, value);
+            // await connection?.current.invoke("SendMessage", guestId, value, typeMessage);
 
             setMessage("");
             // handleGetMessage();
