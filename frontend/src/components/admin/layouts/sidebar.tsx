@@ -31,7 +31,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => {
         { name: "Quản lý Bot", key: "calendar", icon: FaRobot, section: "MAIN MENU" },
         { name: "Đặt lệnh", key: "brokers", icon: Briefcase, section: "MAIN MENU" },
         { name: "Nội dung trang", key: "deals", icon: LayoutGrid, section: "MAIN MENU" },
-        { name: "Lịch sử chuyển tiền", key: "exceptions", icon: FaMoneyBillWave, section: "MAIN MENU" },
+        { name: "Lịch sử chuyển tiền", key: "exceptions", icon: FaMoneyBillWave, section: "MAIN MENU", link: "/admin/transaction" },
         { name: "Đoạn chat", key: "chat", icon: IoChatbox, section: "MAIN MENU", link: '/admin/chat' },
         { name: "Yêu cầu rút tiền", key: "withdraw", icon: FaMoneyBill, section: "MAIN MENU" },
         { name: "Hỗ trợ", key: "help", icon: HelpCircle, section: "ACCOUNT" },
